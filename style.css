@@ -8,7 +8,7 @@ body {
 
 .main {
   position: absolute;
-  top: 10%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -68,38 +68,20 @@ body {
     color: rgba(255, 255, 255, 0.2);
   }
 }
-/* 
-.center {
-  background-color: #fff;
-  width: 400px;
-  height: 200px;
-  position: relative;
-  margin-top: 150px;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-}
-
-.center h1 {
-  padding: 0px;
-  position: absolute;
-  text-align: center;
-  text-transform: capitalize;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -110%);
-  -webkit-transform: translate(-50%, -110%);
-  -moz-transform: translate(-50%, -110%);
-  -ms-transform: translate(-50%, -110%);
-  -o-transform: translate(-50%, -110%);
-} */
 
 .fi-gallery {
   width: 100%;
-  margin-top: 300px;
+  margin-top: 50px;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
 }
 
 .fi-gallery .nav {
@@ -112,6 +94,8 @@ body {
 }
 
 .fi-gallery .nav .btn {
+  background-color: gray;
+  box-shadow: 5px 5px 5px yellow;
   color: #fff;
   border: 2px solid yellow;
   padding: 25px;
@@ -123,6 +107,8 @@ body {
 }
 
 .fi-gallery .nav .btn:hover {
+  box-shadow: 5px 5px 5px;
+  cursor: pointer;
   background-color: yellow;
   color: darkmagenta;
   transition: all 0.5s;
@@ -134,12 +120,35 @@ body {
 
 .fi-gallery .photes {
   width: 85%;
-  margin: auto;
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  margin: 50px auto;
 }
-.fi-gallery .photes img {
-  width: 100%;
+
+.fi-gallery .photes .camera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fi-gallery .photes .headphone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fi-gallery .photes .mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fi-gallery .photes .shoe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fi-gallery .photes .watch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
